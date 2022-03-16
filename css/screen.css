@@ -12,8 +12,14 @@ html {
   padding: 24px 24px 0;
 }
 
+body {
+  max-width: 42cm; /*de em waarde is een relatieve waarde die verwijst naar de base unit van de html*/
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
+  vertical-align: top;
 }
 /*
  * Remove text-shadow in selection highlight:
@@ -23,7 +29,12 @@ img {
  */
 
 ::-moz-selection {
+  /*browser prefix selection is voor*/
+  color: white;
+  background-color: #44c8f5;
 }
 
 ::selection {
+  color: white;
+  background-color: #44c8f5;
 }
